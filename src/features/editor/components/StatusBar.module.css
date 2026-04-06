@@ -1,0 +1,29 @@
+.statusBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.8rem;
+  height: var(--editor-statusbar-height);
+  background: var(--color-bg-tertiary);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  user-select: none;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.juice {
+  color: var(--color-accent-mint);
+  font-weight: 600;
+}

@@ -1,0 +1,43 @@
+/* ═══════════════════════════════════════════════════
+   Juice Editor — Editor Workspace Styles
+   ═══════════════════════════════════════════════════ */
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-bg-primary);
+  overflow: hidden;
+}
+
+.workspace {
+  flex: 1;
+  overflow: hidden;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.editorPane {
+  overflow: hidden;
+  background: var(--color-bg-primary);
+}
+
+.outputPane {
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+}
+
+/* Split.js gutter override */
+.split > .gutter {
+  background: var(--color-border) !important;
+  transition: background var(--transition-fast);
+}
+
+.split > .gutter:hover {
+  background: var(--color-accent-cyan) !important;
+}
